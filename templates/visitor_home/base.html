@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>basefile</title>
+    <link rel="stylesheet" href="{% static 'visitor_home/css/base.css' %}">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li class="logo"> <a href="#"><img src="{% static 'visitor_home/css/brandlogo.png' %}" alt="Image not found"></a></li>
+        <li class="navigators"> <a href="logout">Logout</a></li>
+        <li class="navigators"> <a href="booking_details">Booking</a></li>
+      </ul>
+    </div>
+
+    {% for message in messages %}
+    <script>
+          swal ( "Error" ,  '{{ message }}' ,  "error" )
+    </script>
+    {% endfor %}
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>

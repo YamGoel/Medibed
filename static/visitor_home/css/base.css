@@ -1,0 +1,203 @@
+body{
+  background-image: url('visback.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar{
+  position: relative;
+  background-color: white;
+  width: 87%;
+  margin-top: 18px;
+  height: 84px;
+  margin-left: 80px;
+  border: 2px solid darkgrey;
+  border-radius: 60px;
+}
+ul.{
+  list-style-type: none;
+}
+li{
+  display: inline-block;
+  padding: 4px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.navigators:hover{
+  background-color: grey;
+  transition: all 0.3s ease-in-out;
+}
+a:hover{
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+img{
+  margin-top: -18px;
+  margin-left: 0px;
+  width: 90px;
+  height: 79px;
+}
+
+.navigators{
+  font-size: 18px;
+  float: right;
+  margin-top: 5px;
+  width: 80px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 15px;
+  /* margin: 10px; */
+  /* margin-top: 20px; */
+
+}
+
+.welcome{
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+hr{
+  margin-top: 15px;
+}
+
+.available{
+  margin-top: 5px;
+  color: lightyellow;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+.name{
+  text-align: center;
+  color: black;
+  border:none;
+  font-size: 36px;
+  font-family: serif;
+  font-weight: bolder;
+}
+.card{
+  display: inline-block;
+  width: 90%;
+  border: 2px solid white;
+  height: 100px;
+  background-color: white;
+  border: 2px solid black;
+  margin-left: 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-bottom: -35px;
+}
+
+#wards{
+  color: black;
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+
+.confirmbutton{
+  font-size: 14px;
+  /* display: inline-block; */
+  width: 13%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  margin-top: -240px;
+  margin-left: 970px;
+  /* border: 2px solid grey; */
+}
+.cancelbutton{
+  font-size: 14px;
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: lightgreen;
+  color: black;
+  margin-left: 1050px;
+  margin-top: -20px;
+}
+
+.confirmbutton:hover{
+  border: 3px solid white;
+  transition: all ease-in-out;
+}
+
+.card{
+transition: 1s ease;
+}
+
+.card:hover{
+-webkit-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);
+transition: 0.5s ease;
+}
+.booklbl{
+  /* color: #202263; */
+  color: #FF1B00;
+  font-size: 40px;
+  margin-top: 15px;
+}
+.bookcard{
+  background-image: linear-gradient(to top, white, transparent);
+  backdrop-filter: blur(4px);
+  width: 550px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-radius: 30px;
+  text-align: center;
+  height: 430px;
+  margin-left: 390px;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.n{
+  color: #01074B;
+  font-size: 40px;
+  margin-bottom: -10px;
+}
+.a{
+  color: #01074B;
+  font-size: 20px;
+
+}
+.e{
+  color: #01074B;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 150px;
+}
+.contact{
+  display: inline-block;
+  color: #01074B;
+  margin-left: 10px;
+}
+
+.subbtn{
+  width: 200px;
+  font-weight: bolder;
+  font-size: 20px;
+  height: 45px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  /* margin-left: 150px; */
+  /* margin-top: 120px; */
+}
+
+.subbtn:hover{
+  background-color: lightyellow;
+  border: 1.5px solid black;
+}

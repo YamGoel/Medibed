@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>basefile</title>
+    <link rel="stylesheet" href="{% static 'visitor_home/css/base.css' %}">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li class="logo"> <a href="#"><img src="{% static 'visitor_home/css/brandlogo.png' %}" alt="Image not found"></a></li>
+        <li class="navigators"> <a href="logout">Logout</a></li>
+        <li class="navigators"> <a href="visitorhome">Home</a></li>
+      </ul>
+    </div>
+    <div class="bookcard">
+      <h1 class="booklbl">Your Booking</h1>
+      {% for i in book_details %}
+        <h1 class="n">{{i.0}}</h1>
+      {% endfor %}
+      <h1 class="a">{{add}}</h1>
+      <h3 class="contact">For Inquiry, Contact - </h3>
+      {% for i in book_details %}
+        <h1 class="e">{{i.1}}</h1>
+      {% endfor %}
+      <br>
+      <a href="cancel"><button class="subbtn"  type="submit" name="submit">Cancel Booking</button></a><br><br>
+    </div>
+    {% for message in messages %}
+    <script>
+          swal ( "Error" ,  '{{ message }}' ,  "error" )
+    </script>
+    {% endfor %}
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>

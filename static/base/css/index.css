@@ -1,0 +1,138 @@
+body{
+  background-image: url("Home.jpg")
+}
+img{
+  margin-left: 40px;
+  margin-top: 8px;
+  width: 75px;
+  height: auto;
+}
+.brand-logo{
+  margin-left: 150px;
+  font-size: 87px;
+  margin-top: -103px;
+  color: black;
+  font-family: serif;
+}
+.tagline{
+  margin-left: 280px;
+  margin-top: -18px;
+}
+.head{
+  background-color:white;
+  height: 110px;
+}
+.aboutbtn{
+  float: right;
+  margin-right: 130px;
+  margin-top: -85px;
+}
+.feedbackbtn{
+  float: right;
+  margin-right: 10px;
+  margin-top: -85px;
+}
+.box{
+  margin-left: 160px;
+  width: 950px;
+  height: 320px;
+  background-image: linear-gradient(rgba(0,0,0,0.4  ),rgba(0,0,0,0.4));
+  border-radius: 35px;
+}
+
+.sign-in{
+  margin-top: 50px;
+  text-align: center;
+  font-size:50px;
+  color: white;
+  font-family: serif;
+}
+.shield{
+  width: 30px;
+  height: 30px;
+  margin-left: 265px;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.person{
+  color: white;
+  margin-left: 365px;
+  margin-bottom: 20px;
+}
+
+.person:hover{
+  color: lightgreen;
+}
+
+.shield:hover{
+  color: lightgreen;
+}
+
+.btn1{
+  padding: 15px;
+  margin-top: -10px;
+  margin-left: 180px;
+  width: 200px;
+  color: #FFC300;
+  height: 60px;
+}
+
+.btn2{
+  padding: 15px;
+  margin-top: -10px;
+  margin-left: 60px;
+  width: 200px;
+  color: #FFC300;
+  height: 60px;
+}
+
+.trileft,.triright{
+  margin-top: -40px;
+  color: white;
+}
+
+.trileft:hover,.triright:hover{
+  color: #FFC300;
+}
+
+.btn-change{
+    background: lightseagreen;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    color: #fff;
+}
+.btn-change:hover{
+    -webkit-transform: scale(1.1);
+    background: #31708f;
+
+}
+
+.sign-up{
+  color: white;
+  margin-left: 330px;
+}
+
+.links{
+  color: yellow;
+}
+.links:hover{
+  color: #FFC300;
+}
+
+.foot{
+  background-color: white;
+  margin-left: 330px;
+  border-radius: 25px;
+  width: 600px;
+  position: bottom;
+  margin-top: 37px;
+  height: 40px;
+}
+
+.foottext{
+  font-family: serif;
+  margin-left: 100px;
+  margin-top: -13px;
+}

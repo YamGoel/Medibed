@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>basefile</title>
+    <link rel="stylesheet" href="{% static 'hospital_home/css/base.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="navibar">
+      <ul>
+        <li class="logo3"> <a href="#"><img src="{% static 'hospital_home/css/brandlogo.png' %}" alt="Image not found"></a></li>
+        <li class="navigatorsnew"> <a class="btnclr" href="h_logout">Logout</a></li>
+        <li class="navigatorsnew"> <a class="btnclr" href="hospitalhome">Home</a></li>
+      </ul>
+    </div>
+    <div class="">
+      <h1 class="txt">Occupied Beds:</h1>
+      <div class="databox">
+
+        {% for i in username %}
+        <form action="freeup" method="post">
+          {% csrf_token %}
+          <div class="card">
+            <table>
+              <tr>
+                <td><h2 class="texttodisplay glyphicon glyphicon-bed"></h2></td>
+                <td class="emptytd"></td>
+                <td><input type="text" class="name nametxt" name="name" value="{{i.0}}" readonly></td>
+                <td class="emptytd"></td>
+                <td class="emailtd"><h4 class="emailtxt">{{i.1}}</h4></td>
+                <td class="buttontd"><button  class="confirmbutton" type="submit" name="submit">Free-up</button></td>
+              </tr>
+            </table>
+              <hr class="row11">
+          </div>
+        </form>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="{% static 'hospital/css/signup.css' %}">
+  </head>
+  <body>
+    <h1 class="wel">Welcome to</h1>
+    <h1 class="come">   Medibed</h1>
+    <h3 class="hos">Hospital    ⇴</h3>
+    <div class="container box">
+      <h1 class="title">Sign Up</h1>
+      <hr>
+      <form action="hospitalsignup" method="post">
+        {% csrf_token %}
+        <h3>Hospital Username</h3>
+        <input type="text" name="hospitalusername" placeholder="Input Username" required>
+        <h3>Hospital Name</h3>
+        <input type="text" name="hospitalname" placeholder="Input Hospital Name" required>
+        <h3>Hospital City</h3>
+        <input type="text" name="hospitalcity" placeholder="Input Hospital City" required>
+        <h3>Hospital Email</h3>
+        <input type="email" name="hospitalemail" placeholder="Input Hospital Email-ID" required>
+        <h3>Hospital Address</h3>
+        <input type="text" name="hospitaladdress" placeholder="Input Hospital Address" required>
+        <h3 class="pas">Password</h3>
+        <input type="password"  class="pass" name="password1" placeholder="Input Password" required>
+        <h3 class="cpas">Confirm Password</h3>
+        <input type="password" class="cpass" name="password2" placeholder="Confirm Password" required>
+        <button class="submit" type="submit" name="button">Sign Up</button>
+      </form>
+    </div>
+    {% for message in messages %}
+    <script>
+          swal ( "Error" ,  '{{ message }}' ,  "error" )
+    </script>
+    {% endfor %}
+  </body>
+</html>

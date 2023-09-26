@@ -1,0 +1,107 @@
+body{
+  background-image: url("userback.jpg");
+}
+
+.box{
+  width: 470px;
+  height: 490px;
+  float: right;
+  margin-right: 110px;
+  margin-top: -395px;
+  border-radius: 5%;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  backdrop-filter: blur(1px);
+}
+
+.wel{
+  color: white;
+  font-size: 70px;
+  font-family: serif;
+  margin-left: 130px;
+  margin-top: 170px;
+}
+.come{
+  color: white;
+  font-size: 70px;
+  font-family: serif;
+  margin-left: 170px;
+  margin-top: -30px;
+
+}
+
+.title{
+  color: white;
+  /* color: black; */
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+hr{
+  width: 200px;
+  margin-left: 22px;
+  margin-top: -10px;
+
+}
+
+h1,h2,h3,h4{
+  color: white;
+  /* color: black; */
+  margin-left: 20px;
+}
+
+h3{
+  font-family: serif;
+  margin-bottom: 4px;
+}
+
+input{
+  padding: 5px;
+  /* color: black; */
+  color: white;
+  width: 415px;
+  height: 22px;
+  background: transparent;
+  border-color: white;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+input:focus{
+  outline: none;
+}
+::placeholder{
+  /* color: black; */
+  opacity: 50%;
+  color: white;
+}
+
+.submit{
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  width: 140px;
+  height: 40px;
+  background: lightgreen;
+  /* border-color: black; */
+  border-color: white;
+  margin-left: 170px;
+  border-radius: 25px;
+  margin-top: 14px;
+}
+
+.submit:hover{
+  background-color: yellow;
+}
+
+.vis{
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  width: 200px;
+  height: 25px;
+  margin-left: 200px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 25px;
+  margin-top: -2px;
+}

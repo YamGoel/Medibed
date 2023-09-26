@@ -1,0 +1,334 @@
+body{
+  background-image: url("Home.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.navbar{
+  position: relative;
+  background-color: white;
+  width: 87%;
+  margin-top: 20px;
+  height: 82px;
+  margin-left: 80px;
+  border: 2px solid #365668;
+  border-radius: 60px;
+}
+
+ul.{
+  list-style-type: none;
+}
+li{
+  display: inline-block;
+  padding: 4px;
+}
+.hline{
+  width: 80%;
+  margin-top: 20px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.navigators:hover{
+  background-color: grey;
+  transition: all 0.3s ease-in-out;
+}
+a:hover{
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+img{
+  margin-top: -20px;
+  margin-left: 0px;
+  width: 80px;
+  height: 80px;
+}
+
+.navigators{
+  font-size: 18px;
+  float: right;
+  margin-top: 5px;
+  width: 80px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.welcome{
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+hr{
+  margin-top: -20px;
+}
+
+.formbox{
+  float: left;
+  margin-top: 15px;
+  margin-left: 20px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: transparent;
+  background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15));
+  width: 45%;
+  height: 350px;
+  resize: both;
+  overflow: hidden;
+}
+
+.box1{
+  color: lightyellow;
+  text-align: center;
+}
+
+input:focus{
+  outline: none;
+}
+
+::placeholder{
+  text-align: center;
+  opacity: 50%;
+  color: white;
+}
+
+.box1label1{
+  margin-top: 20px;
+  margin-left: 60px;
+  font-size: 21px;
+  color: white;
+  margin-bottom: 15px;
+  width: 120px;
+  border-radius: 25px;
+}
+
+input{
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  width: 200px;
+  height: 30px;
+  margin-left: 40px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 0px solid white;
+  border-top: 0px solid white;
+  background-color: transparent;
+  border-radius: 25px;
+  margin-top: -2px;
+}
+
+.submit{
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  width: 140px;
+  height: 35px;
+  background: lightgreen;
+  border-color: white;
+  margin-left: 410px;
+  border-radius: 25px;
+  margin-top: -70px;
+}
+
+.submit:hover{
+  background-color: yellow;
+}
+
+.secbox{
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+  border: 2px solid white ;
+  border-radius: 30px;
+  background-color: transparent;
+  background-image: linear-gradient(rgba(0,0,0,0.13),rgba(0,0,0,0.13));
+  width: 45%;
+  height: 350px;
+  resize: both;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.box2{
+  color: lightyellow;
+  text-align: center;
+}
+
+.totalbeds{
+  font-size: 55px;
+  text-align: center;
+  float: left;
+  font-weight: bold;
+  color: white;
+  width: 120px;
+  height: 70px;
+  background-color: #182734;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-bottom: 0px;
+  margin-right: 15px;
+  margin-top: -2px;
+}
+
+.totalbedslbl{
+  color: white;
+  float: left;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+.occlbl{
+  color: white;
+  float: left;
+  margin-left: 65px;
+  margin-top: 5px;
+}
+.waitlbl{
+  color: white;
+  float: left;
+  margin-left: 65px;
+  margin-top: 5px;
+}
+
+/* ###########OCCUPIED CSS############ */
+
+
+.databox{
+  width: 98%;
+  height: 400px;
+  overflow: auto;
+  padding-left: 40px;
+  margin-left: 10px;
+  background-image: linear-gradient(to left, transparent, white);
+  border: 2px solid black;
+  border-bottom-left-radius: 20px;
+}
+.texttodisplay{
+  float: left;
+}
+
+
+.navibar{
+  position: relative;
+  background-color: white;
+  width: 86%;
+  margin-top: 20px;
+  height: 87px;
+  margin-left: 85px;
+  border: 2px solid #365668;
+  border-radius: 60px;
+}
+
+.navigatorsnew:hover{
+  background-color: grey;
+  transition: all 0.3s ease-in-out;
+}
+.btnclr:hover{
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo3{
+  margin-top: 17px;
+}
+
+.navigatorsnew{
+  font-size: 18px;
+  float: right;
+  margin-top: 22px;
+  width: 80px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 19px;
+  color: black;
+  height: 28px;
+}
+
+.btnclr{
+  text-overflow: hidden;
+  text-decoration: none;
+  color: black;
+  font-family: serif;
+}
+
+.txt{
+  font-family: serif;
+  font-weight: bolder;
+  margin-left: 15px;
+  color: white;
+}
+.texttodisplay{
+  margin: 15px;
+  color: blue; opacity: 60%
+  /* margin-top: 15px; */
+}
+.confirmbutton{
+  margin-left: 100px;
+  width: 130px;
+  background-color: lightgreen;
+  border: 2px solid black;
+  border-radius: 5px;
+  /* height: 30px; */
+  height: auto;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.confirmbutton:hover{
+  background-color: lightyellow;
+}
+.buttontd{
+  margin-left: 0px;
+}
+.emailtd{
+  width: 463px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.emailtxt{
+  width: 440px;
+  /* background-color: #8C0000; */
+  background-color: #EC0E6F;
+  height: 30px;
+  border-radius: 20px;
+  color: white;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.emptytd{
+  width: 50px;
+}
+.nametxt{
+  color: white;
+  width: 290px;
+  /* background-color: #EC0E6F; */
+  background-color: #8C0000;
+  height: 30px;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.name{
+  font-size: 18px;
+}
+
+td{
+  /* background-color: purple; */
+}
+
+.row11{
+  margin: 8px;
+  width: 1140px;
+  border: 2px solid black;
+}

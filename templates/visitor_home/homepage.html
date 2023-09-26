@@ -1,0 +1,17 @@
+{% extends "visitor_home/base.html" %}
+{% block content %}
+  <h1 class="welcome">Welcome {{ name }}</h1>
+  <hr>
+  <h1 class="available">Here are the available Hospital(s) in {{ city }}:</h1>
+  {% for i in hos %}
+  <form action="booking" method="post">
+    {% csrf_token %}
+    <div class="card">
+      <input type="text" class="name" name="name" value="{{i.0}}" readonly>
+        <h3 id="wards">Available Bed(s):{{i.3}}</h3>
+        <h3 id="wards">Price per Bed:{{i.4}}</h3>
+        <button  class="confirmbutton" type="submit" name="submit">Confirm Booking</button>
+    </div>
+  </form>
+  {% endfor %}
+{% endblock %}

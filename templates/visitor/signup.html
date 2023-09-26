@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="{% static 'visitor/css/signup.css' %}">
+  </head>
+  <body>
+    <h1 class="wel">Welcome to</h1>
+    <h1 class="come">   Medibed</h1>
+    <h3 class="vis">Visitors    ⇴</h3>
+    <div class="container box">
+      <h1 class="title">Sign Up</h1>
+      <hr>
+      <form action="visitorsignup" method="post">
+        {% csrf_token %}
+        <h3>Username</h3>
+        <input type="text" name="username" placeholder="Input Username" required>
+        <h3>Email ID</h3>
+        <input type="email" name="email" placeholder="Input Email ID" required>
+        <h3>City</h3>
+        <input type="text" name="city" placeholder="Input City" required>
+        <h3>Password</h3>
+        <input type="password" name="password1" placeholder="Input Password" required>
+        <h3>Confirm Password</h3>
+        <input type="password" name="password2" placeholder="Confirm Password" required>
+        <button class="submit" type="submit" name="button">Sign Up</button>
+      </form>
+    </div>
+    {% for message in messages %}
+    <script>
+          swal ( "Error" ,  '{{ message }}' ,  "error" )
+    </script>
+    {% endfor %}
+  </body>
+</html>

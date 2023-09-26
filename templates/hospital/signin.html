@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SignIn</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="{% static 'hospital/css/signin.css' %}">
+  </head>
+  <body>
+    <h1 class="wel">Welcome to</h1>
+    <h1 class="come">   Medibed</h1>
+    <a href="#"> <h3 class="hos">Hospital    ⇴</h3> </a>
+    <div class="container box">
+      <h1 class="title">Sign In</h1>
+      <hr>
+      <form action="hospitalsignin" method="post">
+        {% csrf_token %}
+        <h3>Hospital Username</h3>
+        <input type="text" name="hospitalusername" placeholder="Enter Hospital Username">
+        <h3>Password</h3>
+        <input type="password" name="password" placeholder="Enter Password">
+        <button class="submit" type="submit" name="button">Sign In</button>
+      </form>
+    </div>
+    {% for message in messages %}
+    <script>
+          swal ( "Error" ,  '{{ message }}' ,  "error" )
+    </script>
+    {% endfor %}
+  </body>
+</html>

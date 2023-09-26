@@ -1,0 +1,108 @@
+body{
+  background-image: url("regBack1.jpg");
+}
+
+.box{
+  /* background-image: linear-gradient(rgba(0,0,0,0.2  ),rgba(0,0,0,0.2)); */
+  width: 470px;
+  height: 345px;
+  float: right;
+  margin-right: 100px;
+  margin-top: -300px;
+  border-radius: 5%;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  /* background-color: white; opacity: 85%; */
+}
+a{
+  text-decoration: none;
+}
+.wel{
+  font-size: 70px;
+  font-family: serif;
+  margin-left: 130px;
+  margin-top: 170px;
+}
+.come{
+  font-size: 70px;
+  font-family: serif;
+  margin-left: 170px;
+  margin-top: -30px;
+
+}
+
+.title{
+  color: white;
+  /* color: black; */
+  margin-top: 25px;
+  font-size: 40px;
+}
+
+hr{
+  width: 200px;
+  margin-left: 22px;
+  margin-top: -10px;
+
+}
+
+h1,h2,h3,h4{
+  color: white;
+  /* color: black; */
+  margin-left: 20px;
+}
+
+h3{
+  font-family: serif;
+  margin-bottom: 4px;
+}
+
+input{
+  padding: 5px;
+  color: white;
+  /* color: black; */
+  width: 415px;
+  height: 22px;
+  background: transparent;
+  border-color: white;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+input:focus{
+  outline: none;
+}
+::placeholder{
+  color: white;
+  opacity:50%;
+  /* color: black; */
+}
+
+.submit{
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  width: 140px;
+  height: 40px;
+  background: lightgreen;
+  border-color: white;
+  /* border-color: black; */
+  margin-left: 170px;
+  border-radius: 25px;
+  margin-top: 24px;
+}
+
+.submit:hover{
+  background-color: yellow;
+
+}
+.hos{
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  width: 200px;
+  height: 25px;
+  margin-left: 200px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 25px;
+  margin-top: -2px;
+}
